@@ -19,6 +19,8 @@
         <li><a href="<?php echo $index_page; ?>"    <?php  current_page($elem, 'index')     ?>  >Главная</a></li>
         <li><a href="company.html"                  <?php  current_page($elem, 'company')   ?>  >О компании</a></li>
         <li><a href="begin.html"                    <?php  current_page($elem, 'begin')     ?>  >С чего начать?</a></li>
+        <li><a href="project-help.html"             <?php  current_page($elem, 'project-help')?>>Выбор проекта</a></li>
+        <li><a href="place-help.html"               <?php  current_page($elem, 'place-help')?>  >Выбор земельного участка</a></li>
         <li><a href="low.html"                      <?php  current_page($elem, 'low')       ?>  >Согласование проекта</a></li>
         <li><a href="start.html"                    <?php  current_page($elem, 'start')     ?>  >Начало строительства</a></li>
         <li><a href="news.html"                     <?php  current_page($elem, 'news')      ?>  >Новости</a></li>

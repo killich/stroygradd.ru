@@ -24,8 +24,8 @@
     font-size:12pt;
     color:#005C7D;
 }
-.content .numeric_list li{list-style-position:inside; margin: 0 0 10px 0;}
-.content .numeric_list li a{font-size:13pt; color:#005C7D;}
+.content .numeric_list li{list-style-position:inside; margin: 0 0 10px 0; font-size:10pt;}
+.content .numeric_list li a{font-size:10pt; color:#005C7D;}
 
 /*navigation*/
 .content .navigation li a{
