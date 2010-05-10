@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+  <head>
+    <meta  http-equiv="X-UA-Compatible"  content="IE=EmulateIE7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <?php include('meta.php'); ?>
+                                    
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/basic.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/header.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/content.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/example.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" media="screen,projection" />
+    
+    <script src="./js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="./js/gallery.pack.js" type="text/javascript"></script>
+    <link href="./js/gallery.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+    //<![CDATA[
+        $(function(){
+            $('a.gallery').lightBox({
+                overlayBgColor: '#000',
+                overlayOpacity: 0.6,
+                imageLoading: './js/loading.gif',
+                imageBtnClose: './js/close.gif',
+                imageBtnPrev: './js/prev.gif',
+                imageBtnNext: './js/next.gif',
+                containerResizeSpeed: 350,
+                txtImage: 'Изображения: ',
+                txtOf: 'из'
+            });//$('a.gallery')
+            
+            $('a.tumbs').lightBox({
+                overlayBgColor: '#000',
+                overlayOpacity: 0.6,
+                imageLoading: './js/loading.gif',
+                imageBtnClose: './js/close.gif',
+                imageBtnPrev: './js/prev.gif',
+                imageBtnNext: './js/next.gif',
+                containerResizeSpeed: 350,
+                txtImage: 'Изображения: ',
+                txtOf: 'из'
+            });//$('a.tumbs')
+        });//$(function(){
+    //]]>
+    </script>
+  </head>
+
+  <body>  
+    <div class="body overblock">
+        <div class="header overblock">
+            <img class="phone" alt="Тел.:" src="./images/phone.jpg" />
+            <div class="topics">
+                <h1>Малоэтажное строительство “под ключ”</h1>
+                <ul>
+                  <li><a href="#">Помощь в выборе проекта</a></li>
+                  <li><a href="#">Помощь в подборе участка</a></li>
+                  <li><a href="#">Подключение внешних коммуникаций</a></li>
+                  <li><a href="#">Юридическое сопровождение проекта</a></li>
+                </ul>
+            </div>
+            <div class="navigation_functions">
+                <ul class="overblock">
+                  <li class="index"><a href="http://stroygradd.ru">Главная</a></li>
+                  <li class="send_mail"><a href="mailto:stroygradd@gmail.com">Написать письмо</a></li>
+                  <!-- <li class="site_map"><a href="#" onclick="javascript:alert('Сайт на стадии запуска.\nПожалуйста, вернитесь к нам через несколько дней');return false;">Карта сайта</a></li> -->
+                </ul>
+            </div>
+        </div>

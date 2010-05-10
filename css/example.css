@@ -1,0 +1,33 @@
+/*
+  killich's xHTML
+  killich@yandex.ru
+  Илья Зыкин
+*/
+.example p.title{color:#7C9001;}
+.example img{
+    float:left;
+    margin-right:15px;
+}
+.example .title{
+    border-bottom:1px dashed #CCDEE5;
+    padding-bottom:20px;
+}
+.example table.params{
+    margin-bottom:20px;
+}
+.example table.params .name, .example table.params .value{
+    padding:2px;
+    font-size:10pt;
+    line-height:115%;
+}
+.example table.params .name{
+    color:#005C7D;
+    width:250px;
+}
+.right_block_dashed img{
+    cursor:pointer;
+}
+.right_block_dashed .tumbs{
+    display:block;
+    margin-bottom:20px;
+}

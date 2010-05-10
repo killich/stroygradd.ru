@@ -1,0 +1,63 @@
+/*
+  killich's xHTML
+  killich@yandex.ru
+  Илья Зыкин
+*/
+.content table{width:100%;}
+.content td.left{width:215px;}
+.content td.center .block{margin:0 30px 0 30px;}
+.content td.right{width:160px;}
+.content td.right .block{margin:0 10px 0 0;}
+
+.content h2, h3, h4{color:#575757; font-weight:normal;}
+.content p{font-family:Georgia,Tahoma, Verdana,Trebuchet MS,Arial,serif; font-size:12pt;}
+.content p.img_left{display:block;float:left;margin:5px 10px 5px 5px;}
+.content .bordered_img{border:3px solid #CCC;}
+.content .bordered_img:hover{border:3px solid #8EA11C;}
+
+.content a{color:#F00;}
+.content a.more{color:#7F7F7F; text-decoration:none;}
+.content a.more:hover{color:#8EA11C; text-decoration:underline;}
+.content .numeric_list{
+    margin:0 0 15px 0;
+    list-style-type:decimal;
+    font-size:12pt;
+    color:#005C7D;
+}
+.content .numeric_list li{list-style-position:inside; margin: 0 0 10px 0;}
+.content .numeric_list li a{font-size:13pt; color:#005C7D;}
+
+/*navigation*/
+.content .navigation li a{
+    color:#005C7D;
+    font-size:9pt;
+    font-weight:bold;
+    border-bottom:1px dashed #CCDEE5;
+    padding:5px 0 7px 35px;
+    display:block;
+    text-decoration:none;
+    background:#FFF url(../images/numeric_list_bg.gif) no-repeat scroll 0 -26px;
+}
+.content .navigation li.multyline a.current{
+    background:#7D9101 url(../images/numeric_list_bg_multyline.gif);
+}
+.content .navigation li a.current{
+    background:#FFF url(../images/numeric_list_bg.gif);
+    color:#FFF;
+}
+.content .navigation li a:hover{text-decoration:underline;}
+/*navigation*/
+
+/*report*/
+.content .report{margin:0 0 20px;}
+.content .report p{margin:0 0 7px;}
+.content .report a.more{font-size:8pt;} 
+.content .report .date{color:#7C9001;} 
+.content .report .year{color:#7F7F7F;}
+
+.content .gallery{margin:0 10px 0 0;}
+
+.right_block_dashed{
+    border-left:1px dashed #CCDEE5;
+    padding-left:15px;
+}

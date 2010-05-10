@@ -1,0 +1,39 @@
+/*
+  killich's xHTML
+  killich@yandex.ru
+  Илья Зыкин
+*/
+.footer{
+    border-top:3px solid #BCBCBC;
+    height:120px;
+    background:#F7F9E7;
+    position:relative;
+}
+.footer .company_info{
+    color:#909380;
+    line-height:200%;
+    padding:30px 0 0 240px;
+}
+.footer .company_info a{
+    color:#8EA11C;
+}
+.footer .counters{
+    top:30px;
+    left:710px;
+    position:absolute;
+}
+.footer .counters p{
+    line-height:100%;
+    margin:0;
+    filter:alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    cursor:pointer;
+}
+.footer .counters p:hover{
+    filter:alpha(opacity=100);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+}

@@ -1,0 +1,4 @@
+#AddType "text/html; charset=windows-1251" .html
+#AddType "text/html; charset=utf-8" .html
+AddDefaultCharset Off
+AddType application/x-httpd-php .php .php3 .php4 .php5 .phtml .html

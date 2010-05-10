@@ -1,0 +1,36 @@
+<?php include('_header.html'); ?>
+        <div class="content overblock">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="left">
+                            <ul class="navigation">
+                                <?php
+                                    include('menu.php');
+                                    echo menu(__FILE__);
+                                ?>
+                            </ul>
+                        </td>
+                        <td class="center">
+                            <div class="block">
+                                <h2>Классика</h2>
+                                <a href="/classic.html">Классика</a>
+                                <p>Страница подготавливается к публикации.</p>
+                                
+                                <h2>Контактные лица</h2>
+                                <p>Казаков Алексей Эдуардович   <br />моб.: 8-920-360-92-00</p>
+                                <p>Маклашин Александр Сергеевич <br />моб.: 8-902-243-45-65</p>
+
+                            </div>
+                        </td>
+                        <td  class="right">
+                            <div class="block">
+                                <?php include('_news.html'); ?>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>        
+<?php include('_footer.html'); ?>
