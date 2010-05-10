@@ -1,0 +1,80 @@
+<?php include('_header_examples.html'); ?>
+        <div class="content overblock">
+        
+        <script type="text/javascript">
+        //<![CDATA[        
+            function get_block(num){
+              if(jQuery.browser.msie && (jQuery.browser.version == 6)){alert('Увы. Ничего не получится. Вы используете Internet Explorer 6.'); return false;}
+              jQuery.ajax({
+                type: "POST",
+                url: "/ajax/project.php",
+                data: {},
+                dataType: "html",
+                success: function(data, status, xhr){
+                  $('#center_block').html(data);
+                },
+                beforeSend: function(xhr){
+                  $('#center_block').html('<img src="/js/loading.gif" alt="AJAX загрузка данных" />');
+                },
+                complete: function(xhr, status){
+                  //alert('ok!');
+                },
+                error: function(xhr, status, errorThrown){
+                  alert('oops!');
+                }
+              });//jQuery.ajax
+              
+              jQuery.ajax({
+                type: "POST",
+                url: "/ajax/project.php",
+                data: {left: true},
+                dataType: "html",
+                success: function(data, status, xhr){
+                  $('#right_block').html(data);
+                },
+                beforeSend: function(xhr){
+                  $('#right_block').html('<img src="/js/loading.gif" alt="AJAX загрузка данных" />');
+                },
+                complete: function(xhr, status){
+                  //alert('ok!');
+                },
+                error: function(xhr, status, errorThrown){
+                  alert('oops!');
+                }
+              });//jQuery.ajax
+            }
+        //]]>
+        </script>
+                                    
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="left">
+                            <ul class="navigation">
+                                <?php
+                                    include('menu.php');
+                                    echo menu(__FILE__);
+                                ?>
+                            </ul>
+                        </td>
+                        <td class="center">
+                            <div class="block" id="center_block">
+                                <h2>Проекты готовые для реализации</h2>
+
+                                <a class="album" title="Проект строительства №1" href="#" onclick="get_block(1);return false;" >
+                                    <img src="/images/plans/1/main-mini.jpg" class="bordered_img" alt="Проект строительства №1" title="Проект строительства №1" />
+                                </a>
+                                
+                            </div>
+                        </td>
+                        <td  class="right">
+                            <div class="block" id="right_block">
+                                <?php include('_news.html'); ?>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>        
+<?php include('_footer.html'); ?>

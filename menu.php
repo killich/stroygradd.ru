@@ -32,6 +32,9 @@
         <li class="multyline">
             <a href="primer.html"                   <?php  current_page($elem, 'primer')   ?>   >Примеры проектов с&nbsp;расчетом</a>
         </li>
+        <li class="multyline">
+            <a href="plans.html"                   <?php  current_page($elem, 'plans')   ?>   >Проекты домов</a>
+        </li>
     <?php
     }
     /* <li><a href="classic.html"                  <?php  current_page($elem, 'classic')   ?>  >Проект дома "Классика"</a></li> */
