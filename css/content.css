@@ -56,6 +56,7 @@
 .content .report .year{color:#7F7F7F;}
 
 .content .gallery{margin:0 10px 0 0;}
+.content .album{margin:0 10px 10px 0; overflow:hidden; zoom:1; float:left;}
 
 .right_block_dashed{
     border-left:1px dashed #CCDEE5;
