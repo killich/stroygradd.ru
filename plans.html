@@ -1,51 +1,5 @@
 <?php include('_header_examples.html'); ?>
         <div class="content overblock">
-        
-        <script type="text/javascript">
-        //<![CDATA[        
-            function get_block(num){
-              if(jQuery.browser.msie && (jQuery.browser.version == 6)){alert('Увы. Ничего не получится. Вы используете Internet Explorer 6.'); return false;}
-              jQuery.ajax({
-                type: "POST",
-                url: "/ajax/project.php",
-                data: {},
-                dataType: "html",
-                success: function(data, status, xhr){
-                  $('#center_block').html(data);
-                },
-                beforeSend: function(xhr){
-                  $('#center_block').html('<img src="/js/loading.gif" alt="AJAX загрузка данных" />');
-                },
-                complete: function(xhr, status){
-                  //alert('ok!');
-                },
-                error: function(xhr, status, errorThrown){
-                  alert('oops!');
-                }
-              });//jQuery.ajax
-              
-              jQuery.ajax({
-                type: "POST",
-                url: "/ajax/project.php",
-                data: {left: true},
-                dataType: "html",
-                success: function(data, status, xhr){
-                  $('#right_block').html(data);
-                },
-                beforeSend: function(xhr){
-                  $('#right_block').html('<img src="/js/loading.gif" alt="AJAX загрузка данных" />');
-                },
-                complete: function(xhr, status){
-                  //alert('ok!');
-                },
-                error: function(xhr, status, errorThrown){
-                  alert('oops!');
-                }
-              });//jQuery.ajax
-            }
-        //]]>
-        </script>
-                                    
             <table>
                 <tbody>
                     <tr>
@@ -60,10 +14,38 @@
                         <td class="center">
                             <div class="block" id="center_block">
                                 <h2>Проекты готовые для реализации</h2>
-
-                                <a class="album" title="Проект строительства №1" href="#" onclick="get_block(1);return false;" >
+                                <div class="overblock">
+                                <a class="album" title="Проект строительства №1" href="/plan-1.html">
                                     <img src="/images/plans/1/main-mini.jpg" class="bordered_img" alt="Проект строительства №1" title="Проект строительства №1" />
                                 </a>
+                                
+                                <a class="album" title="Проект строительства №2" href="/plan-2.html" >
+                                    <img src="/images/plans/2/main-mini.jpg" class="bordered_img" alt="Проект строительства №2" title="Проект строительства №2" />
+                                </a>
+                                
+                                <a class="album" title="Проект строительства №3" href="/plan-3.html" >
+                                    <img src="/images/plans/3/main-mini.jpg" class="bordered_img" alt="Проект строительства №3" title="Проект строительства №3" />
+                                </a>
+                                
+                                <a class="album" title="Проект строительства №4" href="/plan-4.html" >
+                                    <img src="/images/plans/4/main-mini.jpg" class="bordered_img" alt="Проект строительства №4" title="Проект строительства №4" />
+                                </a>
+                                
+                                <a class="album" title="Проект строительства №5" href="/plan-5.html" >
+                                    <img src="/images/plans/5/main-mini.jpg" class="bordered_img" alt="Проект строительства №5" title="Проект строительства №5" />
+                                </a>
+                                
+                                <a class="album" title="Проект строительства №5" href="/plan-6.html" >
+                                    <img src="/images/plans/6/main-mini.jpg" class="bordered_img" alt="Проект строительства №6" title="Проект строительства №6" />
+                                </a>
+                                </div>
+                                <p>Мы рады предложить более 1000 типовых проектов строительства в соответствии с каталогом решений от проектной компании <a href="http://plans.ru">plans.ru</a></p>
+                                <p>Уважаемые клиенты, мы с радостью проконсультируем Вас о возможных вариантах доработок проектов под ваши требования.</p>
+                                
+                                
+                                <h2>Контактные лица</h2>
+                                <p>Казаков Алексей Эдуардович   <br />моб.: 8-920-360-92-00</p>
+                                <p>Маклашин Александр Сергеевич <br />моб.: 8-902-243-45-65</p>
                                 
                             </div>
                         </td>

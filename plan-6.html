@@ -1,0 +1,36 @@
+<?php include('_header_examples.html'); ?>
+        <div class="content overblock">                                    
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="left">
+                            <ul class="navigation">
+                                <?php
+                                    include('menu.php');
+                                    echo menu(__FILE__);
+                                ?>
+                            </ul>
+                        </td>
+                        <td class="center">
+                            <div class="block" id="center_block">
+                                <h6>Проект дома №6</h6>
+                                <p>
+                                    <a class="gallery" title="Проект дома: №6" href="/images/plans/6/main.jpg">
+                                        <img src="/images/plans/6/main-mini.jpg" class="bordered_img" alt="Проект строительства №1" title="Проект строительства №1" />
+                                    </a>
+                                </p>
+                                <h6>Первый этаж</h6>
+                                <p><img src="/images/plans/6/level1.jpg" class="bordered_img" alt="Проект строительства №6" title="Проект строительства №6" /></p>
+                                <h6>Второй этаж</h6>
+                                <p><img src="/images/plans/6/level2.jpg" class="bordered_img" alt="Проект строительства №6" title="Проект строительства №6" /></p>                                
+                            </div>
+                        </td>
+                        <td  class="right">
+                            <?php include('_news.html'); ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>        
+<?php include('_footer.html'); ?>
